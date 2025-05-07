@@ -7,7 +7,8 @@ import KeyBenefits from './KeyBenefits';
 import CallToAction from './CallToAction';
 import Footer from './Footer';
 
-const LandingPage = () => {
+// Define the type for the LandingPage component (React.FC is used for functional components)
+const LandingPage: React.FC = () => {
     return (
         <>
             <Header />
