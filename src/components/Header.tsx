@@ -10,20 +10,28 @@ const Header: React.FC = () => {
                 <div className="text-2xl font-bold text-blue-600">Talent Questor</div>
 
                 {/* Navigation Links */}
-                <nav className="hidden md:flex flex-1 items-center">
+                <div className="hidden md:flex w-full items-center">
                     {/* Left-aligned Links */}
-                    <ul className="flex space-x-6">
+                    <ul className="flex space-x-6 mr-auto">
                         <li><a href="#" className="text-gray-700 hover:text-blue-600">Why Talent Questor</a></li>
                         <li><a href="#" className="text-gray-700 hover:text-blue-600">Find Work</a></li>
                         <li><a href="#" className="text-gray-700 hover:text-blue-600">Find Talent</a></li>
                     </ul>
 
                     {/* Right-aligned Links */}
-                    <ul className="flex space-x-6 ml-auto">
-                        <li><a href="#" className="text-gray-700 hover:text-blue-600">Sign In</a></li>
-                        <li><a href="#" className="text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Sign Up</a></li>
+                    <ul className="flex space-x-4 ml-auto">
+                        <li>
+                            <a href="#" className="text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-600 hover:text-white">
+                                Sign In
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">
+                                Sign Up
+                            </a>
+                        </li>
                     </ul>
-                </nav>
+                </div>
 
                 {/* Mobile Menu Button */}
                 <button

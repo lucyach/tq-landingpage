@@ -3,7 +3,7 @@ import Header from './Header';
 import HeroSection from './HeroSection';
 import TalentCategories from './TalentCategories';
 import WhyDifferent from './WhyDifferent';
-import KeyBenefits from './KeyBenefits';
+import ChoosePlan from './ChoosePlan';
 import CallToAction from './CallToAction';
 import Footer from './Footer';
 
@@ -18,7 +18,7 @@ const LandingPage: React.FC = () => {
             <HeroSection />
 
             {/* Talent Categories */}
-            <section className="py-16 bg-gray-50">
+            <section className="py-16 bg-white">
                 <TalentCategories />
             </section>
 
@@ -27,13 +27,13 @@ const LandingPage: React.FC = () => {
                 <WhyDifferent />
             </section>
 
-            {/* Key Benefits */}
-            <section className="py-16 bg-gray-50">
-                <KeyBenefits />
+            {/* Choose Plan */}
+            <section className="py-16 bg-white">
+                <ChoosePlan />
             </section>
 
             {/* Call to Action */}
-            <section className="py-16 bg-blue-600 text-white">
+            <section className="py-16 bg-white">
                 <CallToAction />
             </section>
 
