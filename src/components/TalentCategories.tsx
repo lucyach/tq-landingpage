@@ -4,6 +4,7 @@ import { Card, CardContent } from "./ui/card";
 const TalentCategories: React.FC = () => (
     <section className="py-20 bg-gray-100 text-center">
         <h2 className="text-4xl font-bold mb-8">Find Talent By Category</h2>
+        <h3 className="text-lg max-w-3xl mx-auto mb-8">Looking for an opportunity? <strong><a href="">Browse jobs</a></strong></h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4">
             {["Healthcare", "IT", "Education", "Retail", "Customer Service", "Sales"].map((category) => (
                 <Card key={category} className="hover:shadow-lg transition-shadow">

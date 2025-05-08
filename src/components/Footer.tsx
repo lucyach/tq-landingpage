@@ -10,7 +10,7 @@ const Footer: React.FC = () => (
                     <li key={link} className="text-gray-400 hover:text-white">{link}</li>
                 ))}
             </ul>
-            <p className="text-gray-500">© 2025 Talent Questor. All Rights Reserved.</p>
+            <p className="text-gray-500">Copyright 2025 © Talent Questor. All Rights Reserved.</p>
         </div>
     </footer>
 );
