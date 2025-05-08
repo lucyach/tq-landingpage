@@ -36,5 +36,9 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #1e40af;
+    color: #d4b548;
+}
+
+footer ul li:hover {
+    color: #d4b548;
 }
