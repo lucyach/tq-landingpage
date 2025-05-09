@@ -24,16 +24,16 @@ const HeroSection: React.FC = () => (
             </button>
         </div>
         {/* Wavy border adjusted to cover the entire bottom of the hero section */}
-        <div className="absolute bottom-0 left-0 w-screen overflow-hidden leading-none">
+        <div className="absolute bottom-[-20px] left-0 w-screen overflow-hidden leading-none">
             <svg
-                className="relative block w-full h-16"
+                className="relative block w-full h-48"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1440 320"
+                viewBox="0 0 2880 320"
             >
                 <path
                     fill="#ffffff"
                     fillOpacity="1"
-                    d="M0,128L80,122.7C160,117,320,107,480,128C640,149,800,203,960,208C1120,213,1280,171,1360,149.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+                    d="M0,224L96,213.3C192,203,384,181,576,165.3C768,149,960,139,1152,154.7C1344,171,1536,213,1728,213.3C1920,213,2112,171,2304,149.3C2496,128,2688,128,2784,128L2880,128L2880,320L2784,320C2688,320,2496,320,2304,320C2112,320,1920,320,1728,320C1536,320,1344,320,1152,320C960,320,768,320,576,320C384,320,192,320,96,320L0,320Z"
                 ></path>
             </svg>
         </div>

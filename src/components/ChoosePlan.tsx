@@ -17,14 +17,14 @@ const KeyBenefits: React.FC = () => (
                         left: 0;
                         width: 100%;
                         height: 150%;
-                        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
+                        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.1) 100%);
                         transform: skewY(-20deg);
                         transition: opacity 0.3s;
                         opacity: 0;
                     }
                     .shine:hover::before {
                         animation: shine-animation 1s ease-in-out;
-                        opacity: 1;
+                        opacity: 0.8;
                     }
                     @keyframes shine-animation {
                         0% {
@@ -101,23 +101,27 @@ const KeyBenefits: React.FC = () => (
 
                     {/* Billing Section */}
                     <div className="text-center my-4">
-                        <p className="text-gray-600">
-                            <strong>Monthly Billing</strong>
-                            <br />
+                        <p className="text-gray-800 text-2xl font-bold">
                             {plan.monthlyPrice}
                         </p>
-                        <div className="bg-gray-100 p-3 rounded-lg mt-4">
+                        <div className="bg-gray-100 p-3 rounded-lg mt-4 relative">
+                            <span className="absolute top-0 left-0 bg-yellow-400 text-white text-xs font-bold px-2 py-1 rounded-tr-lg rounded-bl-lg">
+                                BEST VALUE
+                            </span>
                             <strong className="text-yellow-500">OR SAVE 30%</strong>
-                            <br />
-                            <span className="text-sm text-gray-500">BEST VALUE</span>
                             <br />
                             <strong>Annual Billing</strong>
                             <br />
-                            {plan.annualPrice}
+                            <span className="text-2xl font-bold text-gray-800">{plan.annualPrice}</span>
                             <br />
                             <span className="text-sm text-gray-500">{plan.annualBilling}</span>
                             <br />
-                            <span className="text-green-500">{plan.savings}</span>
+                            <div className="flex flex-col items-center text-green-500 mt-2">
+                                <span className="flex items-center">
+                                    <span className="mr-2">✔</span>
+                                    <span>{plan.savings}</span>
+                                </span>
+                            </div>
                         </div>
                     </div>
 
